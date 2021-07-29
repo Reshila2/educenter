@@ -10,21 +10,29 @@
     <li><a href="#"id="services">{{__('lang.services')}}</a></li>
     <li><a href="#"id="team">{{__('lang.team')}}</a></li>
     <li><a href="#" id="contact">{{__('lang.contact')}}</a></li>
-    <li> <select class="form-control Langchange">
-      <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-      <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>Русский</option>                    
+    <li>@if(auth()->check())
+      <li><a href="" class="menu-btn">Videos</a></li>   
+
+      <li> <select class="form-control Langchange">
+          <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+          <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>Русский</option>                    
+          </select>
+      </li>
+    
+      <li>
+         <a href="{{ route('logout') }}" class="menu-btn">{{ auth()->user()->name }}</a>
+        
+      </li>
+        @else
+      <li> 
+     <select class="form-control Langchange">
+          <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+          <option value="ru" {{ session()->get('locale') == 'ru' ? 'selected' : '' }}>Русский</option>                    
       </select>
     </li>
-    
-       <li>@if(auth()->check())<li>
-      <a href="{{ route('logout') }}" class="menu-btn">{{ auth()->user()->name }}</a>
-      </li>
-        @else <li><a href="{{route ('login.create') }}" class="menu-btn">Sign in</a></li>
-      <li> 
+                <li><a href="{{route ('login.create') }}" class="menu-btn">Sign in</a></li>
+              @endif
     </li>
-    @endif
-  </li>
- 
   </ul>
 </nav>
 

@@ -7,7 +7,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh nulla, mattis ut euismod sit amet, dignissim vitae elit. Mauris fringilla sagittis tincidunt. Nulla malesuada convallis nisl</p>
         <div  class="social">
           <a href="#"><span id="twitter" class="fab fa-twitter-square" style="color: #55acee;"></span></a>
-          <a href=""><span id="instagram" class="fab fa-instagram-square"  style=" color: #e63e3e;"></span></a>
+          <!-- <a href=""><span id="instagram" class="fab fa-instagram-square"  style=" color: #e63e3e;"></span></a> -->
           <a href=""><span id="facebook" class="fab fa-facebook-f"  style="color: #3b5999;"></span></a>
           <a href=""><span id="youtube" class="fab fa-youtube-square" style=" color: #e63e3e;"></span></a>
           <a href=""><span  id="linkedin" class="fab fa-linkedin-in" style="color: #080050;"></span></a>

@@ -18,8 +18,8 @@
 			<div class="row justify-content-center text-center">
 				<div class="col-md-8 col-lg-6">
 					<div class="header-section">
-						<h3 class="small-title">Our Experts</h3>
-						<h2 class="title">Let's meet with our team members</h2>
+					
+							<h3 class=>Let's meet with our team members</h3>
 					</div>
 				</div>
 			</div>

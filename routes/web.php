@@ -24,6 +24,12 @@ Route::get('/Home', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/Home1', function () {
+    return view('Home1');
+});
+Route::get('/home1', function () {
+    return view('home1');
+});
 Route::get('Home', 'LocalizationController@index');
 Route::get('change/lang', 'LocalizationController@lang_change')->name('LangChange');
 Route::get('/sendemail','FormController@index');
@@ -38,8 +44,7 @@ Route::get('/login','UserController@loginForm')->name('login.create');
 Route::post('/login','UserController@login')->name('login');
 });
 Route::get('/logout','UserController@logout')->name('logout')->middleware('auth');
-
-Route::group(['middleware'=>'admin','prefix'=>'admin','namespace'=>'Admin'],
-function(){
-Route::get('/','MainController@index');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+    Route::get('/', 'MainController@index')->name('admin.index');
 });
+

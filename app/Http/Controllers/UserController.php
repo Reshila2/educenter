@@ -33,7 +33,7 @@ class UserController extends Controller
            ]);
            session()->flash('success','successful registration');
            Auth::login($user);
-           return view('Home');
+           return view('Home1');
     }
 
     public function loginForm(){
@@ -51,7 +51,7 @@ class UserController extends Controller
 
         ]))
         {
-            return view('Home');
+            return view('Home1');
         }
         return redirect()->back()->withInput($request->only('email', 'password'))->withErrors([
             'approve' => 'Wrong password or email.',

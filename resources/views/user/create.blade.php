@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration Form</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
     <!-- Main css -->
     <link rel="stylesheet" href="style2.css">
 </head>
